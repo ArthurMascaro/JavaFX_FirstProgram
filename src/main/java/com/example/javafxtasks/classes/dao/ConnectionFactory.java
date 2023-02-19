@@ -13,7 +13,7 @@ public class ConnectionFactory implements AutoCloseable{
     public static Connection createConnection() {
         try {
             if (connection == null)
-                connection = DriverManager.getConnection("jdbc:mysql://localhost/javatasks?allowPublicKeyRetrieval=true&useSSL=false", "root", "Art31102005*");
+                connection = DriverManager.getConnection("jdbc:mysql://localhost/javatasks?allowPublicKeyRetrieval=true&useSSL=false", "root", "password");
         } catch (SQLException e) {
             e.printStackTrace();
         }
